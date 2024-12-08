@@ -1,3 +1,6 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif !important;
+}
 a {
     cursor: pointer;
 }
@@ -78,6 +81,13 @@ a {
     overflow: hidden;
 }
 
+.truncate-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .card-img-height {
     aspect-ratio: 16 / 9; /* Đặt tỷ lệ hình ảnh theo tỷ lệ mong muốn, ví dụ 16:9 */
     object-fit: cover; /* Giữ tỷ lệ ảnh và cắt bớt nếu cần */
@@ -121,4 +131,9 @@ a {
 
 .carousel-indicators .active {
     background-color: #d34127; /* Màu của nút đang chọn */
+}
+
+.swal2-title:after {
+    content: none;
+    /* background-color:transparent !important; */
 }
